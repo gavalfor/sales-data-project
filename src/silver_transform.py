@@ -2,7 +2,7 @@ from datetime import timedelta
 import pandas as pd
 import numpy as np
 
-def transform_to_silver(df_bronze, project_id, dataset_id):
+def transform_to_silver(df_bronze):
     """Lee Bronze y aplica la lógica de negocio para crear la columna partition_group."""
     
     # Lectura de la Capa Bronze (conceptual)

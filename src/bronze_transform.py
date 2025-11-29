@@ -1,7 +1,7 @@
 from datetime import date
 import pandas as pd
 
-def transform_to_bronze(df_raw, project_id, dataset_id):
+def transform_to_bronze(df_raw):
     """Lee Raw, limpia y estandariza, y escribe a BQ.bronze_sales."""
     
     # Lectura de la Capa Raw (conceptual)

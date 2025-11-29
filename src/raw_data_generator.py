@@ -4,7 +4,7 @@ import numpy as np
 # from google.cloud import bigquery
 # BQ_CLIENT = bigquery.Client()
 
-def generate_and_ingest_raw_data(project_id, dataset_id, table_id, num_rows=1000000):
+def generate_and_ingest_raw_data(num_rows=1000000):
     """Genera datos sintéticos (simulando una ingesta) y escribe a BQ.raw_sales."""
     
     # [Generación de datos similar al paso anterior]
@@ -23,5 +23,5 @@ def generate_and_ingest_raw_data(project_id, dataset_id, table_id, num_rows=1000
     # destination_table = f"{project_id}.{dataset_id}.{table_id}"
     # df_raw.to_gbq(destination_table, project_id=project_id, if_exists='replace') 
     
-    print(f"✅ Capa Raw: {num_rows} registros escritos en {table_id}")
+    print(f"✅ Capa Raw: {num_rows} registros generados.")
     return df_raw # Retorno para fines de simulación en este código

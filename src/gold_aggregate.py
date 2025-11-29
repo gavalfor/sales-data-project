@@ -1,6 +1,6 @@
 import pandas as pd
 
-def aggregate_to_gold(df_silver, project_id, dataset_id):
+def aggregate_to_gold(df_silver):
     """Lee Silver, agrega métricas clave y escribe a BQ.gold_sales_summary."""
     
     # Lectura de la Capa Silver (conceptual)
