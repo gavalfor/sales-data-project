@@ -1,1 +1,8 @@
 *.db
+#Logs and Credentials
+*.log
+*.json
+# Python artifacts
+__pycache__/
+*.env
+*.parquet
